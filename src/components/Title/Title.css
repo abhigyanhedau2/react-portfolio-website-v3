@@ -1,6 +1,6 @@
 .title-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-flow: row wrap;
   padding: 10vh 0;
   overflow: visible;
@@ -116,7 +116,7 @@
 /********************************************** MEDIA QUERIES **************************************************/
 @media only screen and (max-width: 1600px) {
   .title-wrapper {
-    justify-content: unset;
+    justify-content: space-evenly;
   }
 
   .title-about-wrapper {
@@ -134,7 +134,7 @@
 
   .title-image-wrapper {
     height: 400px;
-    margin-left: 10vw;
+    /* margin-left: 10vw; */
   }
 
   .rotate {
