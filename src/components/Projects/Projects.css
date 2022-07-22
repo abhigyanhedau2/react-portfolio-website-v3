@@ -1,0 +1,44 @@
+.projects-wrapper {
+  box-sizing: border-box;
+  padding: 5rem 5rem;
+  background-color: #fff;
+}
+
+.heading-and-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading-and-btn h1 {
+  font-size: 3.75rem;
+}
+
+.heading-and-btn button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #764af1;
+  border: 1px solid #372270;
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.heading-and-btn button:hover {
+  background-color: #5533b3;
+  color: #fff;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .projects-wrapper {
+    padding: 2.5rem;
+  }
+}

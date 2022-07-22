@@ -1,0 +1,330 @@
+.title-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  padding: 10vh 0;
+}
+
+.title-about-wrapper {
+  width: 40%;
+  border-radius: 60px;
+}
+
+.text-container {
+  padding: 3rem;
+}
+
+.text-container h2 {
+  width: 980px;
+  font-size: 90px;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.mask {
+  height: 130px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mask span {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100px;
+  margin-top: 15px;
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.mask span[data-show] {
+  transform: translateY(-100%);
+  transition: 0.5s transform ease-in-out;
+}
+
+.mask span:nth-child(1) {
+  background-image: linear-gradient(45deg, #64ffb7 50%, #29fd9a);
+}
+
+.mask span:nth-child(2) {
+  background-image: linear-gradient(45deg, #98dffc 30%, #3bc2f8);
+}
+
+.mask span:nth-child(3) {
+  background-image: linear-gradient(45deg, #fc8f8b 50%, #fa7671);
+}
+
+.title-image-wrapper {
+  width: 40%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotate {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+.rotate::before {
+  content: "";
+  position: absolute;
+
+  /* A kind of padding from the outer div. Here, it is 15px from all sides */
+  inset: -50px;
+  border: 40px solid transparent;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.white-circle {
+  /* position: absolute; */
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.rotate img {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+
+/********************************************** MEDIA QUERIES **************************************************/
+@media only screen and (max-width: 1600px) {
+  .title-wrapper {
+    justify-content: unset;
+  }
+
+  .title-about-wrapper {
+    width: 40%;
+  }
+
+  .text-container h2 {
+    font-size: 70px;
+  }
+
+  .mask span {
+    top: 100px;
+    margin-top: 20px;
+  }
+
+  .title-image-wrapper {
+    height: 400px;
+    margin-left: 10vw;
+  }
+
+  .rotate {
+    width: 400px;
+    height: 400px;
+  }
+
+  .white-circle {
+    width: 400px;
+    height: 400px;
+  }
+
+  .rotate img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .title-wrapper {
+    padding: 5vh 0;
+  }
+
+  .text-container h2 {
+    font-size: 50px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+
+  .mask {
+    height: 100px;
+  }
+
+  .mask span {
+    top: 70px;
+  }
+
+  .title-image-wrapper {
+    height: 300px;
+    margin-left: 10vw;
+  }
+
+  .rotate {
+    width: 300px;
+    height: 300px;
+  }
+
+  .white-circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .rotate img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .rotate::before {
+    inset: -30px;
+    border: 20px solid transparent;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    animation: spin 8s linear infinite;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .title-wrapper {
+    padding: 2.5vh 0;
+  }
+
+  .text-container h2 {
+    font-size: 30px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+
+  .mask {
+    height: 54px;
+  }
+
+  .mask span {
+    top: 30px;
+  }
+
+  .title-image-wrapper {
+    height: 200px;
+    margin-left: 5vw;
+  }
+
+  .rotate {
+    width: 200px;
+    height: 200px;
+  }
+
+  .white-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .rotate img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .rotate::before {
+    inset: -20px;
+    border: 10px solid transparent;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    animation: spin 8s linear infinite;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .title-wrapper {
+    padding-top: 64px;
+    justify-content: space-between;
+  }
+
+  .title-image-wrapper {
+    margin-right: 5vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .title-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 0px;
+  }
+  
+  .title-image-wrapper {
+    height: 200px;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+  }
+
+  .rotate {
+    width: 200px;
+    height: 200px;
+  }
+
+  .white-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .rotate img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .rotate::before {
+    inset: -20px;
+    border: 10px solid transparent;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    animation: spin 8s linear infinite;
+  }
+
+  .text-container {
+    padding: 1.5rem;
+  }
+
+  .text-container h2 {
+    font-size: 30px;
+  }
+
+  .title-about-wrapper {
+    margin-right: 7rem;
+  }
+
+  .mask {
+    height: 40px;
+  }
+
+  .mask span {
+    top: 20px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .title-about-wrapper {
+    margin-right: 4rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .title-about-wrapper {
+    margin-right: 6rem;
+  }
+}
+

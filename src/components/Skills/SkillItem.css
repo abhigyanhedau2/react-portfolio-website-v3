@@ -1,0 +1,25 @@
+.skill-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-item label {
+    margin-right: 1.5rem;
+}
+
+.skill-item label i {
+    font-size: 3.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .skill-item label i {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .skill-item label i {
+        font-size: 2rem;
+    }
+}

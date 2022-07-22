@@ -1,0 +1,73 @@
+header {
+  text-align: right;
+  color: #fff;
+}
+
+nav ul {
+  height: 12vh;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0 1.75rem;
+  font-size: 1.25rem;
+}
+
+nav ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgba(255, 255, 255);
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 17px;
+  right: 25px;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+  nav ul li {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+
+  nav ul {
+    visibility: hidden;
+    height: 10vh;
+  }
+
+  .responsive-ul {
+    visibility: visible;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 70px 0;
+    background-image: linear-gradient(45deg, #9772fb 50%, #521de2);
+    height: fit-content;
+  }
+  
+  .responsive-ul li {
+    z-index: 10;
+    max-width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .hamburger-menu {
+    visibility: visible;
+    z-index: 11;
+  }
+}

@@ -1,0 +1,25 @@
+.contacts-wrapper {
+  width: 100vw;
+  background-image: linear-gradient(45deg, #9772fb 50%, #6e3afd);
+  padding: 3rem 5rem 2rem;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.contacts-wrapper h1 {
+  font-size: 3.75rem;
+  margin-bottom: 4vh;
+}
+
+@media only screen and (max-width: 550px) {
+  .contacts-wrapper {
+    background-image: linear-gradient(45deg, #9772fb 50%, #6e3afd);
+    padding: 1.5rem 2.5rem 1rem 2.5rem;
+    color: #fff;
+  }
+
+  .contacts-wrapper h1 {
+    font-size: 3rem;
+    margin-bottom: 2vh;
+  }
+}

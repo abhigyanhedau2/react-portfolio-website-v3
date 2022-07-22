@@ -1,0 +1,32 @@
+.contact-item-wrapper {
+  margin: 4vh 0;
+}
+
+.contact-item-wrapper a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contact-item-wrapper a i {
+  margin-right: 1vw;
+  font-size: 2.25rem;
+}
+
+.contact-item-wrapper a label {
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .contact-item-wrapper a i {
+    margin-right: 5vw;
+  }
+
+  .contact-item-wrapper a label {
+    font-size: 1.2rem;
+  }
+}
