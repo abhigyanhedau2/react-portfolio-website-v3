@@ -3,6 +3,7 @@
   justify-content: space-around;
   flex-flow: row wrap;
   padding: 10vh 0;
+  overflow: visible;
 }
 
 .title-about-wrapper {
@@ -65,11 +66,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: visible;
 }
 
 .rotate {
   width: 500px;
   height: 500px;
+  overflow: visible;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -79,7 +82,8 @@
 .rotate::before {
   content: "";
   position: absolute;
-
+  overflow: visible;
+  
   /* A kind of padding from the outer div. Here, it is 15px from all sides */
   inset: -50px;
   border: 40px solid transparent;
