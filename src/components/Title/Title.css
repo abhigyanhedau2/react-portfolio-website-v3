@@ -83,7 +83,7 @@
   content: "";
   position: absolute;
   overflow: visible;
-  
+
   /* A kind of padding from the outer div. Here, it is 15px from all sides */
   inset: -50px;
   border: 40px solid transparent;
@@ -262,13 +262,20 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .title-about-wrapper {
+    width: 60%;
+    margin: 1rem auto;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   .title-wrapper {
     flex-direction: column-reverse;
     align-items: center;
     padding-top: 0px;
   }
-  
+
   .title-image-wrapper {
     height: 200px;
     margin-left: 5vw;
@@ -307,10 +314,6 @@
     font-size: 30px;
   }
 
-  .title-about-wrapper {
-    margin-right: 7rem;
-  }
-
   .mask {
     height: 40px;
   }
@@ -320,15 +323,14 @@
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .title-about-wrapper {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 350px) {
   .title-about-wrapper {
-    margin-right: 4rem;
+    width: 90%;
   }
 }
-
-@media only screen and (max-width: 300px) {
-  .title-about-wrapper {
-    margin-right: 6rem;
-  }
-}
-

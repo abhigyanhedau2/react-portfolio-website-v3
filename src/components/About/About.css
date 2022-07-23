@@ -76,6 +76,10 @@
     align-items: center;
   }
 
+  .about-wrapper {
+    padding: 3rem 4rem 7rem;
+  }
+
   .about-desc {
     width: 67vw;
     font-size: 1rem;
@@ -90,4 +94,10 @@
     margin: 2rem 0 3rem 0;
   }
 
+}
+
+@media only screen and (max-width: 550px) {
+  .about-wrapper {
+    padding: 3rem 3rem 7rem;
+  }
 }
