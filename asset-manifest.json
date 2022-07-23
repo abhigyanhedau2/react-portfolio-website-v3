@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-portfolio-website-v3/static/css/main.ea177f45.css",
+    "main.css": "/react-portfolio-website-v3/static/css/main.f1764cd9.css",
     "main.js": "/react-portfolio-website-v3/static/js/main.7a1aad45.js",
     "static/media/food-order-app-img1.png": "/react-portfolio-website-v3/static/media/food-order-app-img1.6d1ed1f5659bb8b24c80.png",
     "static/media/food-order-app-img2.png": "/react-portfolio-website-v3/static/media/food-order-app-img2.fb3819cd814c6b0f5052.png",
@@ -12,11 +12,11 @@
     "static/media/todo-website-img1.png": "/react-portfolio-website-v3/static/media/todo-website-img1.be13f77038559acd089e.png",
     "static/media/resume.pdf": "/react-portfolio-website-v3/static/media/resume.1cebb069d3d299175906.pdf",
     "index.html": "/react-portfolio-website-v3/index.html",
-    "main.ea177f45.css.map": "/react-portfolio-website-v3/static/css/main.ea177f45.css.map",
+    "main.f1764cd9.css.map": "/react-portfolio-website-v3/static/css/main.f1764cd9.css.map",
     "main.7a1aad45.js.map": "/react-portfolio-website-v3/static/js/main.7a1aad45.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea177f45.css",
+    "static/css/main.f1764cd9.css",
     "static/js/main.7a1aad45.js"
   ]
 }
