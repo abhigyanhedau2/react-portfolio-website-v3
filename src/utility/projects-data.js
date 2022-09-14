@@ -4,7 +4,9 @@ import pro1img3 from '../assets/hotel-website-img3.png'
 import pro2img1 from '../assets/food-order-app-img1.png'
 import pro2img2 from '../assets/food-order-app-img2.png'
 import pro2img3 from '../assets/food-order-app-img3.png'
-import pro3img1 from '../assets/todo-website-img1.png'
+import pro3img1 from '../assets/joke-website-img1.png'
+import pro3img2 from '../assets/joke-website-img2.png'
+import pro3img3 from '../assets/joke-website-img3.png'
 
 // 3 Projects on Main Page
 export const projects = [
@@ -30,12 +32,12 @@ export const projects = [
     },
     {
         id: 'p3',
-        name: 'To Do list',
-        subheading: 'Just a simple todo list',
-        desc: "Just a simple todo list which is very helpful to keep the track of everyday tasks.",
+        name: 'What The Joke!',
+        subheading: 'A website with jokes',
+        desc: "Want to have a good laugh? Or just want to crack jokes among some friends? Or need jokes as per your cutomizations. We've got you covered. What The Joke! is your one stop solution for all the best jokes on the internet.",
         imgurl1: pro3img1,
-        imgurl2: pro3img1,
-        imgurl3: pro3img1,
-        projectLink: 'https://hidden-plateau-62682.herokuapp.com/'
+        imgurl2: pro3img2,
+        imgurl3: pro3img3,
+        projectLink: 'https://abhigyanhedau2.github.io/what-the-joke/'
     }
 ]
