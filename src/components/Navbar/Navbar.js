@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import myResume from '../../assets/resume.pdf';
+import myResume from '../../assets/Resume.pdf';
 
 const Navbar = () => {
 
